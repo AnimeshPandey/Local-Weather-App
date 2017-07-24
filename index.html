@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Local Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+
+            <a href="#" class="brand-logo center"><i class="fa fa-sun-o"></i>Local Weather App</a>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="">
+            <div class="headline">Weather Forecast <span class="location"></span></div>
+            <br>
+            <div class="row">
+                <div class="">
+                    <div class="weather-info">
+                        <div class="weather-info-animation">
+                            <canvas id="animated-icon" width="220" height="220"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="">
+                        <div class="weather-info-text">
+                            <div class="col s12 m4">
+                                <span class="local-time">~~:~~</span>
+                            </div>
+                            <div class="col s12 m4">
+                                <div class="temperature">
+                                    <span class="temp-celsius">°C</span>
+                                    <span class="temp-fahrenheit hidden">°F</span>
+                                </div>
+                            </div>
+                            <div class="col s12 m4">
+                                <span class="weather-condition">~~~</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="search-weather">
+                        <h3>Search for location</h3>
+                        <form id="my-form" action="">
+                            <input type="search" class="forecast">
+                            <div class="btn btn-search black lighten-3">Search</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="footer">
+            <p>A FreeCodeCamp Project by Animesh Pandey</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+</body>
+
+</html>
